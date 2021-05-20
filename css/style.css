@@ -89,6 +89,7 @@ body {
 .contacts {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 .logo-link {
   font-family: var(--secondary-font);
@@ -122,9 +123,12 @@ body {
 .menu-link.current {
   color: var(--accent-color);
 }
-.mail-link {
+.contacts-item:not(:last-child) {
   margin-right: 50px;
 }
+/* .mail-link {
+  margin-right: 50px; 
+}  */
 .mail-link,
 .tel-link {
   font-weight: 500;
@@ -280,6 +284,8 @@ footer {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  display: inline-block;
+  margin-bottom: 20px;
 }
 .footer-logo-blue-part {
   color: var(--accent-color);
@@ -290,17 +296,17 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin-top: 20px;
+  margin-bottom: 9px;
 }
-.footer-list-item {
-  margin-top: 9px;
+.footer-list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-list-item-link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.17;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -317,7 +323,7 @@ footer {
 .filtr-section-item:not(:last-child) {
   margin-right: 8px;
 }
-.filtr-btn {
+.filtr-section-item {
   margin-bottom: 50px;
 }
 .portfolio-list {
@@ -369,4 +375,5 @@ footer {
   padding: 20px 24px;
   background: #ffffff;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
